@@ -38,7 +38,7 @@
     <applicationManager autoExpand="true"/>
 
     <!-- Configures the application on a specified context root -->
-    <webApplication contextRoot="/openliberty-employee-service" location="openliberty-employee-service.war" />
+    <webApplication id="openliberty-employee-service" name="openliberty-employee-service" location="openliberty-employee-service.war" />
 
     <!-- Default SSL configuration enables trust for default certificates from the Java runtime -->
     <ssl id="defaultSSLConfig" trustDefaultCerts="true" />
