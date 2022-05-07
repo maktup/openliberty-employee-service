@@ -1,5 +1,14 @@
-FROM icr.io/appcafe/open-liberty:kernel-slim-java8-openj9-ubi
-COPY --chown=1001:0  /src/main/liberty/config/server.xml /config/
-#RUN features.sh
-COPY --chown=1001:0  /target/*.war /config/apps/
-RUN configure.sh
+FROM maven:3.5-jdk-8 as BUILD
+ 
+COPY src /usr/src/app/src
+COPY pom.xml /usr/src/app
+RUN mvn -f /usr/src/app/pom.xml clean package
+
+
+FROM open-liberty:microProfile2-java11
+
+COPY liberty/server.xml /config/
+
+COPY --from=BUILD /usr/src/app/target/authors.war /config/apps/
+
+EXPOSE 3000
