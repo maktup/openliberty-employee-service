@@ -6,6 +6,14 @@
     <featureManager>
         <feature>jakartaee-9.1</feature>
         <feature>microProfile-5.0</feature>
+        <feature>javaee-api-8.0</feature>
+        <feature>json-20090211</feature>
+        
+        <feature>cdi-2.0 </feature>
+        <feature>jaxrs-2.1</feature>
+        <feature>mpMetrics-2.3</feature>
+        <feature>mpHealth-2.2</feature>
+        <feature>mpConfig-1.4</feature>
     </featureManager>
 
     <!-- This template enables security. To get the full use of all the capabilities, a keystore and user registry are required. -->
