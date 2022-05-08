@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<server description="OpenLiberty Server">
+	
+    <featureManager>
+        <feature>webProfile-8.0</feature>      
+        <feature>jakartaee-9.1</feature>
+        <feature>microProfile-5.0</feature>
+        <feature>javaee-api-8.0</feature>
+        <feature>json-20090211</feature>
+    </featureManager>
+
+    <httpEndpoint id="defaultHttpEndpoint" host="*" httpPort="3000" httpsPort="9443"/>
+     
+    <webApplication id="openliberty-employee-service" name="openliberty-employee-service" location="openliberty-employee-service.war" />
+
+</server>
