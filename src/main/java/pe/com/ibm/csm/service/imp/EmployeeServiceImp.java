@@ -35,16 +35,16 @@ import pe.com.ibm.csm.service.EmployeeService;
 			   try{
 				   objEmp = new Employee();
 				   objEmp.setId( 1 );
-				   objEmp.setNombres( "MARTIN PATRICIO" );
-				   objEmp.setApellidos( "CALAGUA DIAS" );
+				   objEmp.setNombres( "IVAN ARTURO" );
+				   objEmp.setApellidos( "FRANCISCO SILVA" );
 				   objEmp.setDni( 42814133 );
 				   objEmp.setEdad( 35 );
 				   listaEmp.add( objEmp );
 					
 				   objEmp = new Employee();
 				   objEmp.setId( 2 );
-				   objEmp.setNombres( "CESAR RICARDO" );
-				   objEmp.setApellidos( "GUERRA ARNAIZ" );
+				   objEmp.setNombres( "PAOLO MARIO" );
+				   objEmp.setApellidos( "VERA TUDELA" );
 				   objEmp.setDni( 41816133 );
 				   objEmp.setEdad( 39 );
 				   listaEmp.add( objEmp );
