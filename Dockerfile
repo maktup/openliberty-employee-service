@@ -10,4 +10,5 @@ FROM open-liberty:microProfile2-java11
 COPY /src/main/liberty/config/server.xml /config/
 COPY --from=BUILD /usr/src/app/target/*.war /config/apps/
 
-EXPOSE 3000
+EXPOSE 9080
+EXPOSE 9443
