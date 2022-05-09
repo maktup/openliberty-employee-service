@@ -1,5 +1,21 @@
 
 ********************************************************
+************* [DESPLEGAR - MICROSERVICIO] **************
+********************************************************
+- Iniciar SERVER:
+  $ cd openliberty-employee-service
+  $ mvn liberty:run
+
+- Iniciar SERVER (Modo DESARROLLADOR):
+  $ cd openliberty-employee-service
+  $ mvn liberty:dev
+
+- Apagar SERVER:
+  $ cd openliberty-employee-service
+  $ mvn liberty:stop
+  
+
+********************************************************
 ********************* [TEST LOCAL] *********************
 ********************************************************
 OPERACIÓN => 'getEmpleados': 
