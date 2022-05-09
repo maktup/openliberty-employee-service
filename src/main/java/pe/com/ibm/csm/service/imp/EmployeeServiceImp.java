@@ -54,7 +54,7 @@ import pe.com.ibm.csm.service.EmployeeService;
 				   objEmp = new Employee();
 				   objEmp.setId( 1 );
 				   objEmp.setNombres( "IVAN ARTURO" );
-				   objEmp.setApellidos( "FRANCISCO SILVA" );
+				   objEmp.setApellidos( "PINILLOS SILVA" );
 				   objEmp.setDni( 42814133 );
 				   objEmp.setEdad( 35 );
 				   listaEmp.add( objEmp );
@@ -106,7 +106,7 @@ import pe.com.ibm.csm.service.EmployeeService;
 				   objEmp = new Employee();
 				   objEmp.setId( Integer.parseInt( id.trim() ) );
 				   objEmp.setNombres( "MARTIN PATRICIO" );
-				   objEmp.setApellidos( "CALAGUA DIAS" );
+				   objEmp.setApellidos( "CALAGUA VERA" );
 				   objEmp.setDni( 42814133 );
 				   objEmp.setEdad( 35 );			
 			   }
