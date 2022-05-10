@@ -1,32 +1,38 @@
 package pe.com.ibm.csm.bean;
 
-import java.io.Serializable;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
-import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
+import java.io.Serializable; 
 
 /**
  * Employee
  * @author cguerra
  **/
- @RegisterRestClient
+ @XmlRootElement( name = "Employee" ) 
  @Schema( name = "Employee", description = "POJO que representa la entidad Empleado." )
  public class Employee implements Serializable{
 	 
 		private static final long serialVersionUID = 2548104558661770400L;
 		
 		@Schema( required = true )
+		@XmlElement
 		private long id;
 		
 		@Schema( required = true )
+		@XmlElement
 		private String nombres;
 		
 		@Schema( required = true )
+		@XmlElement
 		private String apellidos;
 		
 		@Schema( required = true )
+		@XmlElement
 		private int dni;
 		
 		@Schema( required = true )
+		@XmlElement
 		private int edad;
 	
 		//Constructor: 

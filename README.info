@@ -20,6 +20,7 @@
 ********************************************************
 API (YamelFile): 
 http://localhost:9080/openapi
+http://localhost:9080/openapi/ui/
 
 OPERACIÓN => 'getEmpleados': 
 http://localhost:9080/openliberty-employee-service/ibm/employeeService/getEmpleados
@@ -34,6 +35,7 @@ http://localhost:9080/openliberty-employee-service/ibm/employeeService/getEmplea
 $ docker build -t openliberty-employee-service .
 $ docker run -i --rm -p 9080:9080 openliberty-employee-service
 $ curl http://localhost:9080/openapi
+$ curl http://localhost:9080/openapi/ui/
 $ curl http://localhost:9080/openliberty-employee-service/ibm/employeeService/getEmpleados
 $ curl http://localhost:9080/openliberty-employee-service/ibm/employeeService/employeeService/getEmpleadosPorId/1
 
@@ -62,9 +64,10 @@ spec:
   replicas: 1
 
 $ curl http://openliberty-employee-service-dummy-liberty.cluster-cla-crga-ccc03eca20d26e6ac64511f874a64b9b-0000.us-south.containers.appdomain.cloud/openapi
+$ curl http://openliberty-employee-service-dummy-liberty.cluster-cla-crga-ccc03eca20d26e6ac64511f874a64b9b-0000.us-south.containers.appdomain.cloud/openapi/ui/
 $ curl http://openliberty-employee-service-dummy-liberty.cluster-cla-crga-ccc03eca20d26e6ac64511f874a64b9b-0000.us-south.containers.appdomain.cloud/openliberty-employee-service/ibm/employeeService/getEmpleados
 $ curl http://openliberty-employee-service-dummy-liberty.cluster-cla-crga-ccc03eca20d26e6ac64511f874a64b9b-0000.us-south.containers.appdomain.cloud/openliberty-employee-service/ibm/employeeService/getEmpleadosPorId/1
-
+ 
 
 ********************************************************
 ********************* [DOCKER-HUB] *********************
