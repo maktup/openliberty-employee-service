@@ -22,10 +22,10 @@ API (YamelFile):
 http://localhost:9080/openapi
 http://localhost:9080/openapi/ui/
 
-OPERACIÓN => 'getEmpleados': 
+OPERACION => 'getEmpleados': 
 http://localhost:9080/openliberty-employee-service/ibm/employeeService/getEmpleados
 
-OPERACIÓN => 'getEmpleadosPorId': 
+OPERACION => 'getEmpleadosPorId': 
 http://localhost:9080/openliberty-employee-service/ibm/employeeService/getEmpleadosPorId/1
 
 

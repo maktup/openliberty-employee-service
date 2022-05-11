@@ -1,4 +1,8 @@
 # DOCKERFILE para escenario de BUILD el proyecto con MAVEN.
+FROM open-liberty:microProfile2-java8-openj9
 
 COPY /src/main/liberty/config/server.xml /config/
 COPY /target/*.war /config/apps/
+
+EXPOSE 9080
+EXPOSE 9443
