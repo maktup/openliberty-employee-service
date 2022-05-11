@@ -5,11 +5,11 @@ COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 RUN mvn -f /usr/src/app/pom.xml clean compile package
 
-
-FROM open-liberty:microProfile2-java8-openj9
+FROM icr.io/appcafe/open-liberty:kernel-slim-java8-openj9-ubi
 
 COPY /src/main/liberty/config/server.xml /config/
+RUN features.sh
 COPY --from=BUILD /usr/src/app/target/*.war /config/apps/
-
 EXPOSE 9080
 EXPOSE 9443
+RUN configure.sh
