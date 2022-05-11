@@ -37,7 +37,7 @@ $ docker run -i --rm -p 9080:9080 openliberty-employee-service
 $ curl http://localhost:9080/openapi
 $ curl http://localhost:9080/openapi/ui/
 $ curl http://localhost:9080/openliberty-employee-service/ibm/employeeService/getEmpleados
-$ curl http://localhost:9080/openliberty-employee-service/ibm/employeeService/employeeService/getEmpleadosPorId/1
+$ curl http://localhost:9080/openliberty-employee-service/ibm/employeeService/getEmpleadosPorId/1
 
 
 ********************************************************
